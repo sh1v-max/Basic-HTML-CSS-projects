@@ -9,16 +9,34 @@ a {
   display: inline-block;
 }
 
+main{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .cards-container {
   color: white;
-  padding: 1.2rem;
+  /* padding: 1.2rem; */
   margin: 1.2rem;
   display: flex;
-  background-color: aqua;
-}
+  /* background-color: aqua; */
+  border-radius: 8px;
+  overflow: hidden;
+  max-width: 1000px;
+  /* margin: auto; */
+} 
 
 .card{
     padding: 3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.card img{
+    width: 60px;
+    height: 40px;
 }
 
 .card h2{
@@ -33,20 +51,23 @@ a {
 .card p{
     opacity: 0.6;
     line-height: 30px;
+    margin-bottom: 4em;
 }
 
 .card a{
     border: 2px solid white;
     padding: 12px 30px;
     border-radius: 30px;
-    margin-top: 2em;
+    margin-top: auto;
+    /* align-self: flex-start; */
+    margin-right: auto;
 }
 
 .orange-card {
   background-color: #e28525;
   /* border-top-left-radius: 10px;
   border-top-right-radius: 10px; */
-  border-radius: 40px 40px 0 0;
+  /* border-radius: 40px 40px 0 0; */
 }
 
 .green-card {
@@ -57,5 +78,5 @@ a {
   background-color: #00403f;
   /* border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px; */
-  border-radius: 0 0 40px 40px;
+  /* border-radius: 0 0 40px 40px; */
 }
