@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+}
+
+.cards-container {
+  color: white;
+  padding: 1rem;
+}
+
+.card h2{
+    text-transform: uppercase;
+}
+
+.orange-card {
+  background-color: #e28525;
+}
+
+.green-card {
+  background-color: #016972;
+}
+
+.dark-green-card {
+  background-color: #00403f;
+}
