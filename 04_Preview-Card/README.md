@@ -2,4 +2,7 @@
 
 ## Preview
 ![preview](./images/image1.png)
-![preview](./images/image.png)
+<p align="center">
+    <img src="./images/image.png" />
+</p>
+
