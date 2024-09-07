@@ -32,6 +32,7 @@ main{
     padding: 3rem;
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 .card img{
@@ -79,4 +80,15 @@ main{
   /* border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px; */
   /* border-radius: 0 0 40px 40px; */
+}
+
+@media (max-width: 850px) {
+  .cards-container {
+    flex-direction: column;
+    max-width: 400px;
+  }
+  .card{
+    /* width: auto; */
+    width: unset;
+  }
 }
