@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  font-family: "Lexend Deca", system-ui;
 }
 
 a {
@@ -12,7 +13,11 @@ a {
 }
 
 .card h2{
-    text-transform: uppercase;
+    text-transform: uppercase ;
+    font-family: "Big Shoulders Display", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
 }
 
 .orange-card {
