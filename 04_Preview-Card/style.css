@@ -9,6 +9,21 @@ a {
   display: inline-block;
 }
 
+.orange-card a:hover{
+    background-color: hsl(0, 0%, 100%);
+    color: #e28525;
+}
+
+.green-card a:hover{
+    background-color: hsl(0, 0%, 100%);
+    color: #006971;
+}
+
+.dark-green-card a:hover{
+    background-color: hsl(0, 0%, 100%);
+    color: #00403f;
+}
+
 main{
     min-height: 100vh;
     display: flex;
@@ -91,4 +106,5 @@ main{
     /* width: auto; */
     width: unset;
   }
+  
 }
