@@ -1,0 +1,129 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #141d26;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    color: #fff;
+}
+
+.container {
+    background-color: #1a202c;
+    border: 1px solid #2d3748;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 10px;
+    border-radius: 4px;
+    margin: 10px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #1a202c;
+    border-bottom: 1px solid #2d3748;
+}
+
+header .profile-thumbnail {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+header .profile-name {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+header .profile-name h3 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+header .profile-name h4 {
+    font-size: 14px;
+    color: #657786;
+}
+
+header .follow-btn {
+    display: flex;
+    margin: 0 0 0 auto;
+}
+
+header .follow-btn button {
+    border: 0;
+    border-radius: 3px;
+    padding: 5px;
+    background-color: #1da1f2;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+#inner {
+    padding: 10px;
+    background-color: #1a202c;
+    border-bottom: 1px solid #2d3748;
+}
+
+#inner p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+#inner hr {
+    margin: 20px 0;
+    border-style: solid;
+    opacity: 0.1;
+    border-color: #2d3748;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #1a202c;
+}
+
+footer .stats {
+    display: flex;
+    font-size: 14px;
+}
+
+footer .stats div {
+    margin-right: 10px;
+}
+
+footer .stats strong {
+    font-size: 16px;
+    color: #fff;
+}
+
+footer .cta {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+footer .cta button {
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 10px;
+    color: #fff;
+}
+
+footer .cta button:hover {
+    text-decoration: underline;
+    color: #fff;
+}
