@@ -1,3 +1,7 @@
+body{
+    background: radial-gradient(circle at 50% 50%, #f1f1f1, #ececec, #ddd, #ccc, #bbb, #aaa, #999, #888, #777, #666, #555, #444, #333, #222, #111);
+}
+
 .balls {
     border-radius: 50%;
     position: fixed;
