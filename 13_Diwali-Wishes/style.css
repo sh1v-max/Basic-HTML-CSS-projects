@@ -1,13 +1,15 @@
 body{
     margin: 0;
+    font-family: "Salsa", cursive;
 } 
 
 .hero-section{
-    min-height: 100vh;
+    /* min-height: 100vh; */
     /* background-color: #F99501; */
     background-image: url(./images/orange-backdrop\ 1.png);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
 }
 
 .paragraph-and-audio{
@@ -22,7 +24,7 @@ body{
 .hero-section p{
     font-size: 46px;
     font-family: "Salsa", cursive;
-    max-width: 400px;
+    max-width: 500px;
     /* margin-left: 15rem; */
 }
 
@@ -34,10 +36,77 @@ audio::-webkit-media-controls-play-button,
 
 .audio-container{
     background-color: #FBD8A4;
-    max-width: 500px;
+    max-width: max-content;
     border-radius: 45px;
     display: flex;
     align-items: center;
     justify-content: center;
     padding-left: 20px; 
 }
+
+.lakshmi-ganesh-section{
+    background-color: #F99501;
+    padding-top: 1em;
+}
+
+.lakshmi-ganesh-img{
+    max-width: 900px;
+    display: block;
+    margin-inline: auto;
+}
+
+.horizontal-devider{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* justify-content: center; */
+    width: 1010px;
+    margin-inline: auto;
+    /* margin-top: 1rem; */
+    margin-bottom: 1em;
+}
+
+.horizontal-line{
+    height: 4px;
+    width: 468px;
+    background-color: #FBD8A4;
+}
+
+.circle{
+    width: 10px;
+    height: 10px;
+    background-color: #FBD8A4;
+    border-radius: 50%;
+}
+
+@media (max-width: 580px){
+    .first-deepak{
+        display: block;
+        margin-left: auto;
+    }
+    .paragraph-and-audio{
+        margin-left: 1rem;
+    }
+    .decoration{
+        margin-bottom: 0;
+    }
+    .music-lines, 
+    .music-soulfull-text, 
+    .second-deepak{
+        display: none;
+    }
+    
+    .hero-section p{
+        font-size: 28px;
+    }
+    .first-deepak{
+        width: 100%;
+        max-width: 300px;
+    }
+} 
+
+/* @media (width< 840px){
+    .second-deepak{
+        display: none;
+    }
+} */
