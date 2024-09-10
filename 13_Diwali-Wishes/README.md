@@ -2,7 +2,9 @@
 
 `I have explored flexbox using this Simple HTML-CSS project`
 
-## Preview
+Here is the [Demo](https://hey-diwali.netlify.app/) link.
+
+### Preview
 ![preview](./images/image0.png)
 ![preview](./images/image1.png)
 ![preview](./images/image2.png)
