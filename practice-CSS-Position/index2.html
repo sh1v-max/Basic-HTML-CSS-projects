@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+        .parent01{
+            margin: 100px;
+            border: 5px solid red;
+            height: 5000px;
+        }
+        .parent02{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 100px;
+            border: 5px solid red;
+            height: 5000px;
+            margin: auto;
+        }
+        .parent2{
+            margin: 100px;
+            border: 5px solid red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .img1{
+            position: sticky;
+            top: 100px
+        }
+    </style>
+</head>
+<body>
+    <div class="parent2">
+        <div class="parent01">
+            <img class="img1" src="./images/image.png" alt="">
+            <img class="img2" src="./images/image.png" alt="">
+        </div>
+        <div class="parent02">
+            <img class="img1" src="./images/image.png" alt="">
+            <img class="img2" src="./images/image.png" alt="">
+        </div>
+    </div>
+</body>
+</html>
