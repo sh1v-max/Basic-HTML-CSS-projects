@@ -1,6 +1,6 @@
 # Practiced GRID in CSS
 
-Here is My CSS GRID [Live](https://hey-diwali.netlify.app/) link.
+Here is My CSS GRID [Live](https://gridincss.netlify.app/) link.
 
 
 ### Preview
