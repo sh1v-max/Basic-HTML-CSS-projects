@@ -19,6 +19,12 @@ h1{
     display: grid;
     gap: 1.5rem;
     margin-inline: auto;
+    grid-template-areas: 
+        'purple'
+        'orange'
+        'blue'
+        'green'
+        'pink'
 }
 
 .box{
@@ -33,18 +39,23 @@ h1{
 
 .box-1{
     background-color: #BA56F6;
+    grid-area: purple;
 }
 .box-2{
     background-color: #FF6161;
+    grid-area: orange;
 }
 .box-3{
     background-color: #505CCA;
+    grid-area: blue;
 }
 .box-4{
     background-color: #3DAD99;
+    grid-area: green;
 }
 .box-5{
     background-color: #BE3690;
+    grid-area: pink;
 }
 
 @media (min-width: 700px) {
@@ -52,31 +63,40 @@ h1{
         font-size: 64px;
     }
     .container{
-        grid-template-columns: 1fr 1fr;
+        /* grid-template-columns: 1fr 1fr; */
         padding-bottom: 4rem;
         padding-left: 2rem;
         padding-right: 2rem;
+        grid-template-areas: 
+        'purple purple'
+        'orange blue'
+        'green blue'
+        'pink pink'
+        ;
     }
 
     .box{
         min-height: 250px;
     }
 
-    .box-1, .box-5{
+    /* .box-2{
+        
+    } */
+    /* .box-1, .box-5{ */
         /* grid-column-start: 1;
         grid-column-end: 3; */
 
-        grid-column-start: span 2;
-    }
+        /* grid-column-start: span 2; */
+    /* } */
 
-    .box-3{
+    /* .box-3{ */
         /* grid-column-start: 2;
         grid-row-start: 2;
         grid-column-end: 3;
         grid-row-end: 4; */
 
-        grid-row-start: span 2;
-    }
+        /* grid-row-start: span 2;
+    } */
     /* .box-5{
         /* grid-column-start: 1;
         grid-row-start: 4;
@@ -89,11 +109,15 @@ h1{
 
 @media (min-width: 1000px) {
     .container{
-        grid-template-columns: repeat(4, 1fr);
+        /* grid-template-columns: repeat(4, 1fr); */
         max-width: 1200px;
+        grid-template-areas: 
+        'purple purple orange blue'
+        'green pink pink blue'
+        ;
     }
-
+/* 
     .box{
         min-height: 350px;
-    }
+    } */
 }
