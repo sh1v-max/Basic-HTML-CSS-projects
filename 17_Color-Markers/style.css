@@ -1,0 +1,156 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    text-align: center;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.308), rgba(255, 255, 255, 0.055)), url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3M3wwfDF8c2VhcmNofDJ8fHdhdGVyJTIwdGV4dHVyZXxlbnwwfHx8fDE2MzYyMzg5MTg&ixlib=rb-1.2.1&q=80&w=1080') no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 3rem;
+    color: #fff;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
+    margin-bottom: 40px;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 40px 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Marker General Styling */
+.marker {
+    width: 250px; /* Increased width */
+    height: 35px; /* Increased height */
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s; /* For smooth hover effect */
+}
+
+.marker:hover {
+    transform: scale(1.1); /* Scale up on hover */
+}
+
+.cap {
+    width: 80px; /* Increased width */
+    height: 35px; /* Increased height */
+}
+
+.sleeve {
+    width: 120px; /* Increased width */
+    height: 35px; /* Increased height */
+    background-color: rgba(255, 255, 255, 0.5);
+    border-left: 10px double rgba(0, 0, 0, 0.75);
+}
+
+/* Individual Marker Colors */
+.red {
+    background: linear-gradient(rgb(122, 74, 14), rgb(245, 62, 113), rgb(162, 27, 27));
+    box-shadow: 0 0 20px 0 rgba(83, 14, 14, 0.8);
+}
+
+.green {
+    background: linear-gradient(#55680D, #71F53E, #116C31);
+    box-shadow: 0 0 20px 0 #3B7E20CC;
+}
+
+.blue {
+    background: linear-gradient(hsl(186, 76%, 16%), hsl(223, 90%, 60%), hsl(240, 56%, 42%));
+    box-shadow: 0 0 20px 0 hsla(223, 59%, 31%, 0.8);
+}
+
+.yellow {
+    background: linear-gradient(#e7a536, #ffd700, #c79100);
+    box-shadow: 0 0 20px 0 rgba(198, 151, 0, 0.8);
+}
+
+.purple {
+    background: linear-gradient(hsl(290, 70%, 40%), hsl(290, 85%, 50%), hsl(290, 60%, 30%));
+    box-shadow: 0 0 20px 0 rgba(85, 26, 139, 0.8);
+}
+
+.orange {
+    background: linear-gradient(#e65100, #ff9800, #ff5722);
+    box-shadow: 0 0 20px 0 rgba(230, 81, 0, 0.8);
+}
+
+.pink {
+    background: linear-gradient(#ff1493, #ff69b4, #ff85d0);
+    box-shadow: 0 0 20px 0 rgba(255, 20, 147, 0.8);
+}
+
+/* Cap Color Customization */
+.red .cap {
+    background-color: rgb(162, 27, 27);
+}
+
+.green .cap {
+    background-color: #116C31;
+}
+
+.blue .cap {
+    background-color: hsl(186, 76%, 16%);
+}
+
+.yellow .cap {
+    background-color: #ffd700;
+}
+
+.purple .cap {
+    background-color: hsl(290, 70%, 40%);
+}
+
+.orange .cap {
+    background-color: #e65100;
+}
+
+.pink .cap {
+    background-color: #ff1493;
+}
+
+/* Add Responsive Design */
+@media (max-width: 768px) {
+    .marker {
+        width: 200px;
+        height: 30px;
+    }
+
+    .cap {
+        width: 60px;
+        height: 30px;
+    }
+
+    .sleeve {
+        width: 100px;
+        height: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .marker {
+        width: 160px;
+        height: 25px;
+    }
+
+    .cap {
+        width: 50px;
+        height: 25px;
+    }
+
+    .sleeve {
+        width: 90px;
+        height: 25px;
+    }
+}
