@@ -5,4 +5,4 @@
 Here is My Card Layout [Live](https://responsvecards.netlify.app/) link.
 
 ### Preview
-![preview](./images/image.png)
+![preview](./image/image.png)
