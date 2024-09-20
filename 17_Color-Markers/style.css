@@ -4,7 +4,7 @@ body {
     padding: 0;
     color: #333;
     text-align: center;
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.308), rgba(255, 255, 255, 0.055)), url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3M3wwfDF8c2VhcmNofDJ8fHdhdGVyJTIwdGV4dHVyZXxlbnwwfHx8fDE2MzYyMzg5MTg&ixlib=rb-1.2.1&q=80&w=1080') no-repeat center center;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.575), rgba(255, 255, 255, 0.801)), url('https://images.unsplash.com/photo-1645197644105-308cd697a71f?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center;
     background-size: cover;
     height: 100vh;
     display: flex;
