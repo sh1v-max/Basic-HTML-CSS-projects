@@ -1,6 +1,6 @@
 # Card Layout
 
-`I have Layout, some animation and responsive flexbox, using this Simple HTML-CSS project`
+`I have learned working of Layout, some animation and responsive flexbox, using this Simple HTML-CSS project`
 
 Here is My Card Layout [Live](https://responsvecards.netlify.app/) link.
 
