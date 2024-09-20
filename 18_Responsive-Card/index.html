@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Elegant Card Layout</title>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Arial:wght@400&display=swap" rel="stylesheet">
   <style>
     * {
       margin: 0;
@@ -13,13 +14,16 @@
     }
 
     body {
-      font-family: 'Arial', sans-serif;
-      background-color: #e9ecef;
+      font-family: 'Dancing Script', cursive, 'Arial', sans-serif;
+      font-weight: 800;
+      background:linear-gradient(135deg, rgb(243, 243, 243), rgba(0, 4, 255, 0.205)), url('https://images.unsplash.com/photo-1533352559235-e685f26af1d7?q=80&w=1457&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center fixed;
+      background-size: cover;
       display: flex;
       justify-content: center;
       align-items: center;
       min-height: 100vh;
       padding: 20px;
+      color: white; /* Change text color for better contrast */
     }
 
     .container {
@@ -28,19 +32,24 @@
       gap: 20px;
       width: 100%;
       max-width: 1200px;
+      padding: 20px;
+      backdrop-filter: blur(10px); /* Adds a blur effect behind the cards */
+      border-radius: 20px; /* Rounded corners for the container */
     }
 
     .card {
-      background-color: #ffffff;
-      border-radius: 12px;
+      background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent background */
+      border-radius: 20px;
       overflow: hidden;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 8px 20px rgba(83, 50, 50, 0.411);
       transition: transform 0.3s ease, box-shadow 0.3s ease;
-      border: 1px solid #dee2e6;
+      border: 0 solid #dee2e6;
+      position: relative;
+      overflow: hidden;
     }
 
     .card:hover {
-      transform: translateY(-5px);
+      transform: translateY(-10px);
       box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
     }
 
@@ -49,6 +58,11 @@
       background-size: cover;
       background-position: center;
       border-bottom: 5px solid #3498db;
+      transition: transform .3s ease;
+    }
+
+    .card:hover .card-image {
+      transform: scale(1.1);
     }
 
     .card-content {
@@ -56,41 +70,42 @@
     }
 
     .card-content h2 {
-      font-size: 1.5rem;
+      font-size: 2.2rem; /* Increased font size */
       margin-bottom: 10px;
       color: #333;
       font-weight: bold;
     }
 
     .card-content p {
-      font-size: 0.95rem;
+      font-size: 1.4rem; /* Increased font size */
       color: #555;
       margin-bottom: 20px;
       line-height: 1.5;
     }
 
     button {
-      padding: 10px 15px;
+      padding: 12px 18px; /* Slightly larger button */
       border: none;
       border-radius: 5px;
       background-color: #3498db;
       color: #fff;
       cursor: pointer;
-      transition: background-color 0.3s ease;
+      transition: background-color 0.3s ease, transform 0.3s ease;
       font-weight: bold;
     }
 
     button:hover {
       background-color: #2980b9;
+      transform: scale(1.05);
     }
 
     @media (max-width: 768px) {
       .card-content h2 {
-        font-size: 1.25rem;
+        font-size: 1.5rem; /* Adjusted for smaller screens */
       }
 
       .card-content p {
-        font-size: 0.9rem;
+        font-size: 1rem; /* Adjusted for smaller screens */
       }
     }
   </style>
@@ -100,37 +115,34 @@
   <div class="container">
     <div class="card">
       <div class="card-image"
-        style="background-image: url('https://images.unsplash.com/photo-1726808260756-ec1d4eceaf71?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
+        style="background-image: url('https://plus.unsplash.com/premium_photo-1677620614797-29d03f3417ce?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
       </div>
       <div class="card-content">
-        <h2>Card Title</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tempus metus quis ligula fermentum
-          tincidunt.</p>
-        <button>Read More</button>
+        <h2>Morning Dew</h2>
+        <p>Start your day with the fresh tranquility of nature. Discover the beauty of dew-kissed grass in the early morning light.</p>
+        <button>Explore More</button>
       </div>
     </div>
 
     <div class="card">
       <div class="card-image"
-        style="background-image: url('https://plus.unsplash.com/premium_photo-1672116452571-896980a801c8?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
+        style="background-image: url('https://images.unsplash.com/photo-1663235693850-c4c6bde20089?q=80&w=1210&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
       </div>
       <div class="card-content">
-        <h2>Another Title</h2>
-        <p>Vestibulum quis turpis at odio ullamcorper congue a vitae eros. Integer vel purus ut dui ultricies tristique.
-        </p>
-        <button>Read More</button>
+        <h2>Tranquil Lake</h2>
+        <p>Experience the serenity of a calm lake surrounded by lush greenery. Perfect for a peaceful getaway or reflection.</p>
+        <button>Explore More</button>
       </div>
     </div>
 
     <div class="card">
       <div class="card-image"
-        style="background-image: url('https://images.unsplash.com/photo-1507897127021-78e359667312?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
+        style="background-image: url('https://plus.unsplash.com/premium_photo-1676320125952-85ced2f39d7f?q=80&w=1169&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
       </div>
       <div class="card-content">
-        <h2>Last Title</h2>
-        <p>Phasellus lacinia sapien a augue gravida, a consequat risus ultricies. Nam vehicula urna at volutpat auctor.
-        </p>
-        <button>Read More</button>
+        <h2>Mountain Adventure</h2>
+        <p>Embark on an adventure through breathtaking mountain trails. Experience the thrill of exploration and the beauty of nature.</p>
+        <button>Explore More</button>
       </div>
     </div>
   </div>
