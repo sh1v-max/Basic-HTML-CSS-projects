@@ -1,50 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Registration Form</title>
     <style>
-        body{
-            margin: 0px;
+      body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        background-color: #f0f0f5;
+        color: #333;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      h1, p {
+        text-align: center;
+      }
+
+      form {
+        background-color: white;
+        padding: 2rem;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        width: 60vw;
+        max-width: 500px;
+        min-width: 300px;
+        margin: 0 auto;
+      }
+
+      fieldset {
+        border: none;
+        padding: .1rem 0;
+        border-bottom: 2px solid #e0e0e0;
+      }
+
+      fieldset:last-of-type {
+        border-bottom: none;
+      }
+
+      label {
+        display: block;
+        margin: 0.5rem 0;
+        font-weight: bold;
+      }
+
+      input,
+      textarea,
+      select {
+        width: 100%;
+        padding: 0.5em;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+        margin-top: 0.5rem;
+        font-size: 1rem;
+      }
+
+      input:focus,
+      textarea:focus,
+      select:focus {
+        outline: none;
+        border-color: #4a90e2;
+        box-shadow: 0 0 5px rgba(74, 144, 226, 0.3);
+      }
+
+      input[type="submit"] {
+        width: 100%;
+        padding: 1em;
+        background-color: #4a90e2;
+        color: white;
+        font-size: 1.1rem;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #357ab9;
+      }
+
+      input[type="radio"],
+      input[type="checkbox"] {
+        width: unset;
+        margin-right: 0.5em;
+      }
+
+      a {
+        color: #4a90e2;
+      }
+
+      /* Additional Style for a better look */
+      input[type="file"] {
+        background-color: #f9f9f9;
+        padding: 0.4em;
+      }
+
+      textarea {
+        resize: vertical;
+      }
+      
+      .inline {
+        display: inline;
+      }
+
+      @media (max-width: 500px) {
+        form {
+          padding: 1.5rem;
         }
-        .parent01{
-            margin: 100px;
-            border: 5px solid red;
-            height: 5000px;
-        }
-        .parent02{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin: 100px;
-            border: 5px solid red;
-            height: 5000px;
-            margin: auto;
-        }
-        .parent2{
-            margin: 100px;
-            border: 5px solid red;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .img1{
-            position: sticky;
-            top: 100px
-        }
+      }
+
     </style>
-</head>
-<body>
-    <div class="parent2">
-        <div class="parent01">
-            <img class="img1" src="./images/image.png" alt="">
-            <img class="img2" src="./images/image.png" alt="">
-        </div>
-        <div class="parent02">
-            <img class="img1" src="./images/image.png" alt="">
-            <img class="img2" src="./images/image.png" alt="">
-        </div>
-    </div>
-</body>
+  </head>
+  <body>
+    <form method="post" action='https://register-demo.freecodecamp.org'>
+      <h1>Registration Form</h1>
+      <p>Please fill out this form with the required information</p>
+      
+      <fieldset>
+        <label for="first-name">First Name:
+          <input id="first-name" name="first-name" type="text" required />
+        </label>
+
+        <label for="last-name">Last Name:
+          <input id="last-name" name="last-name" type="text" required />
+        </label>
+
+        <label for="email">Email:
+          <input id="email" name="email" type="email" required />
+        </label>
+
+        <label for="new-password">New Password:
+          <input id="new-password" name="new-password" type="password" pattern="[a-z0-5]{8,}" required />
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Account Type</legend>
+        <label for="personal-account">
+          <input id="personal-account" type="radio" name="account-type" class="inline" checked /> Personal
+        </label>
+        <label for="business-account">
+          <input id="business-account" type="radio" name="account-type" class="inline" /> Business
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <label for="profile-picture">Upload Profile Picture:
+          <input id="profile-picture" type="file" name="file" />
+        </label>
+
+        <label for="age">Age:
+          <input id="age" type="number" name="age" min="13" max="120" />
+        </label>
+
+        <label for="car">What Car do you like the most?
+          <select id="car" name="car">
+            <option value="">(select one)</option>
+            <option value="1">Ford</option>
+            <option value="2">Chevrolet</option>
+            <option value="3">Toyota</option>
+            <option value="4">Honda</option>
+            <option value="5">Tesla</option>
+          </select>
+        </label>
+
+        <label for="bio">Bio:
+          <textarea id="bio" name="bio" rows="3" cols="30" placeholder="I like solo Driving with mountain view..."></textarea>
+        </label>
+      </fieldset>
+
+      <label for="terms-and-conditions">
+        <input class="inline" id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" />
+        I accept the <a href="">terms and conditions</a>
+      </label>
+
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
 </html>
