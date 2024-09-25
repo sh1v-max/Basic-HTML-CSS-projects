@@ -9,8 +9,11 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    overflow: hidden;
     color: white;
+}
+
+.main{
+    overflow: hidden;
 }
 
 .circle {
@@ -47,8 +50,8 @@ body {
 }
 
 .card{
-    width: 450px;
-    height: 590px;
+    width: 400px;
+    height: 570px;
     background-image: linear-gradient(140deg, rgba(255, 255, 255, 0.424), rgba(255, 255, 255, 0.118));
     backdrop-filter: blur(10px);
     border-radius: 10px;
@@ -71,13 +74,12 @@ body {
 }
 
 .card-text{
-    padding-inline: 18px;
+    padding: 24px 18px;
 }
 
 .tag-heart-container {
     display: flex;
     justify-content: space-between;
-    margin-top: 20px;
 }
 
 .tag {
@@ -105,5 +107,47 @@ body {
     font-weight: 200;
   }
 
-  .stats{
-  }
+.star-rating{
+    display: flex;
+    align-items: center;
+
+}
+
+.rating-value{
+    font-family: "Shadows Into Light", cursive;
+    color: #00d9ff;
+    font-size: 18px;
+    margin-inline: 8px;
+}
+
+.rating-count{
+    font-family: "Shadows Into Light", cursive;
+    color: #00d9ff;
+    padding-left: 10px;
+    font-size: 18px;
+}
+
+.card-button{
+    background-color: transparent;
+    width: 100%;
+    border: none;
+    color: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-block: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.carrating{
+    width: 170px;
+    height: 45px;
+}
+
+.carrating-1{
+    border-radius: 10px 0 0 10px;
+}
+
+.carrating-2{
+    border-radius: 0 10px 10px 0;
+}
