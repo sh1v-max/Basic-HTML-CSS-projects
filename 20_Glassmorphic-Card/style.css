@@ -1,0 +1,109 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #001422;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    overflow: hidden;
+    color: white;
+}
+
+.circle {
+    border-radius: 100%;
+    position: absolute;
+}
+
+.circle-1 {
+    height: 140px;
+    width: 140px;
+    background-image: radial-gradient(60% 60% at 50% 50%, #bc8fff, #a200ff);
+    top: -40px;
+    left: -70px;
+}
+
+.circle-2 {
+    height: 360px;
+    width: 360px;
+    background-image: radial-gradient(60% 60% at 50% 50%, #ffa46c, #ff5500);
+    top: -50px;
+    left: 320px;
+}
+
+.circle-3 {
+    height: 220px;
+    width: 220px;
+    background-image: radial-gradient(60% 60% at 50% 50%, #9cff9b, #00aa1c);
+    top: 420px;
+    left: -150px;
+}
+
+.card-container {
+    position: relative;
+}
+
+.card{
+    width: 450px;
+    height: 590px;
+    background-image: linear-gradient(140deg, rgba(255, 255, 255, 0.424), rgba(255, 255, 255, 0.118));
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    padding: 18px;
+}
+
+.card-content{
+    border: .744px solid rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+}
+
+.card-image {
+    width: 100%;
+    border-radius: 10px;
+    vertical-align: middle;
+}
+
+.icon{
+    width: 30px;
+}
+
+.card-text{
+    padding-inline: 18px;
+}
+
+.tag-heart-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.tag {
+    font-family: "Jacquarda Bastarda 9", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #ffd147;
+    padding: 2px 6px;
+    border-radius: 5px;
+    background: rgba(241, 198, 68, 0.24);
+  }
+
+  .card-title{
+    font-family: "Shadows Into Light", cursive;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 20px;
+  }
+
+  .card-subtitle{
+    font-family: "Shadows Into Light", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    font-weight: 200;
+  }
+
+  .stats{
+  }
