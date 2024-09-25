@@ -117,13 +117,14 @@ body {
     font-family: "Shadows Into Light", cursive;
     color: #00d9ff;
     font-size: 18px;
+    padding-left: 6px;
     margin-inline: 8px;
 }
 
 .rating-count{
     font-family: "Shadows Into Light", cursive;
     color: #00d9ff;
-    padding-left: 10px;
+    padding-left: 6px;
     font-size: 18px;
 }
 
