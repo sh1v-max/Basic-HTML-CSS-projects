@@ -6,6 +6,59 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    
+    .cube {
+      padding-top: 400px;
+      width: 200px;
+      height: 200px;
+      position: relative;
+      transform-style: preserve-3d;
+      transform: rotateX(45deg) rotateY(45deg);
+      border-color: dimgrey;
+    }
+
+    .face {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      border: 2px solid black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 20px;
+    }
+
+    .front {
+      background-color: red;
+      transform: translateZ(100px);
+    }
+
+    .back {
+      background-color: green;
+      transform: rotateY(180deg) translateZ(100px);
+    }
+
+    .left {
+      background-color: blue;
+      transform: rotateY(-90deg) translateZ(100px);
+    }
+
+    .right {
+      background-color: yellow;
+      transform: rotateY(90deg) translateZ(100px);
+    }
+
+    .top {
+      background-color: orange;
+      transform: rotateX(90deg) translateZ(100px);
+    }
+
+    .bottom {
+      background-color: purple;
+      transform: rotateX(-90deg) translateZ(100px);
+    }
+  </style>
 </head>
 
 <body>
