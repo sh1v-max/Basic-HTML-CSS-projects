@@ -1,0 +1,17 @@
+body {
+  margin: 0;
+  background-color: #202124;
+}
+
+.container{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo{
+  width: 100%;
+  max-width: 500px;
+}
