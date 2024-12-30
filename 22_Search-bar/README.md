@@ -5,4 +5,4 @@
 Here is Playing Card Layout [Live](https://theplayingcards.netlify.app/) link.
 
 ### Preview
-![preview](./images/image.png)
+![preview](./images/image.png)`
