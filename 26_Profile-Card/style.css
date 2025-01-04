@@ -4,7 +4,7 @@
 
 body {
   margin: 0px;
-  background-color: #FCF0FF;
+  background-color: #f9e4fe;
   font-family: 'nunito', sans-serif;
 }
 
@@ -27,12 +27,14 @@ body {
   max-width: 330px;
   background-color: #9D40E4;
   border-radius: 35px;
-  padding:32px 18px 24px;
+  padding:32px 22px 24px;
+  position: relative;
 }
 
 .icons-container{
   display: flex;
   justify-content: space-between;
+  position: relative;
 }
 
 .icons-container img{
@@ -42,6 +44,11 @@ body {
   height: 30px;
   border-radius: 50%;
   cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.icons-container img:hover{
+  transform: scale(1.2);
 }
 
 .share-icon{
@@ -53,6 +60,7 @@ body {
   border-radius: 30px;
   text-align: center;
   margin-top: 60px;
+  position: relative;
 }
 
 .avatar-container{
@@ -89,15 +97,27 @@ body {
 .card-subtitle{
   color: rgb(138, 138, 138);
   margin-top: 6px;
-}
+} 
 
 .social-media-icons{
   padding: 16px 0px;
   border-top: 2px solid #dfdfdf;
 }
 
+.social-media-icon{
+  transition: all 0.2s ease-in-out;
+}
+
+.social-media-icon + .social-media-icon{
+  margin-left: 8px;
+}
+
 .instagram{
   width: 22px;
+}
+
+.social-media-icon:hover{
+  transform: scale(1.5);
 }
 
 .view-profile-btn{
@@ -110,4 +130,34 @@ body {
   padding: 8px 20px;
   margin-bottom: 20px;
   /* Margin top and bottom only works on display inline-block or block */
+  transition: all 0.2s ease-in-out;
+}
+
+.view-profile-btn:hover{
+  transform: scale(1.05);
+}
+
+.circle{
+  border-radius: 100%;
+  background-image: linear-gradient(110deg, #b049ff 0%, #ae37e1 100%);
+  position: absolute;
+}
+
+.circle-1{
+  right: 36px;
+  top: 8px;
+  height: 160px;
+  width: 160px;
+}
+
+.circle-2{
+  height: 90px;
+  width: 90px;
+  top: 90px;
+  left: 8px;
+}
+
+.social-media-icons a{
+  text-decoration: none;
+  margin: 0px 5px;
 }

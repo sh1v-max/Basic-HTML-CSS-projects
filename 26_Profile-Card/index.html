@@ -5,7 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Profile Card</title>
-  <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,regular,500,600,700,800,900,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css?family=Nunito:200,300,regular,500,600,700,800,900,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
+    rel="stylesheet" />
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -13,9 +15,12 @@
   <div class="top-strip"></div>
   <div class="container">
     <div class="profile-card">
+      <div class="circle circle-1"></div>
+      <div class="circle circle-2"></div>
       <div class="icons-container">
         <img class="like-icon" src="./images/like-icon.svg" alt="like-icon">
-        <img class="share-icon" src="./images/share-icon.svg" alt="share-icon">
+        <img onclick="navigator.share({url: location.href})" class="share-icon" src="./images/share-icon.svg"
+          alt="share-icon">
       </div>
       <div class="profile-content">
         <div class="avatar-container">
@@ -24,12 +29,17 @@
         </div>
         <h3 class="card-heading">Shiv Shankar Singh</h3>
         <p class="card-subtitle">Frontend Developer</p>
-        <a href="#" class="view-profile-btn">View Full Profile</a>
+        <a href="https://github.com/sh1v-max" target="_blank" class="view-profile-btn">View Full Profile</a>
         <div class="social-media-icons">
-          <img src="./images/linkedin.svg" alt="linkedin">
-          <img src="./images/twitter.svg" alt="twitter">
-          <!-- <img src="./images/telegram.svg" alt="telegram"> -->
-          <img class="instagram" src="./images/instagram.svg" alt="instagram">
+          <a href="https://www.linkedin.com/in/shiv-shankar-singh-2070521ba/" target="_blank">
+            <img class="social-media-icon" src="./images/linkedin.svg" alt="linkedin">
+          </a>
+          <a href="https://x.com/1amWaziR" target="_blank">
+            <img class="social-media-icon" src="./images/twitter.svg" alt="twitter">
+          </a>
+          <a href="https://www.instagram.com/singh_shiv0/" target="_blank">
+            <img class="social-media-icon instagram" src="./images/instagram.svg" alt="instagram">
+          </a>
         </div>
       </div>
     </div>
