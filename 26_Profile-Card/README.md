@@ -1,5 +1,5 @@
 # My Profile Card
-A Profile Card with share button and personal direct links attached.
+A Profile Card with share functionality and personal direct links attached to it.
 
 - ### Here is [My Profile Card](https://seemyprofilehere.netlify.app/) live link.
 
