@@ -25,4 +25,24 @@ body {
   height: 340px;
   background-color: #9D40E4;
   border-radius: 35px;
+  padding:32px 18px 24px;
+}
+
+.icons-container{
+  display: flex;
+  justify-content: space-between;
+}
+
+.icons-container img{
+  background-color: #b95dff;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.profile-content{
+  background-color: white;
+  border-radius: 30px;
+  text-align: center;
 }
