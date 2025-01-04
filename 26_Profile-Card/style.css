@@ -10,12 +10,11 @@ body {
 
 .top-strip{
   background-color: #9D40E4;
-  height: 52px;
-
+  height: 82px;
 }
 
 .container{
-  min-height: 80vh;
+  min-height: 85vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -160,4 +159,9 @@ body {
 .social-media-icons a{
   text-decoration: none;
   margin: 0px 5px;
+}
+
+.bottom-strip{
+  background-color: #9D40E4;
+  height: 42px;
 }
